@@ -347,7 +347,7 @@ export const defaultStore = markRaw(new Storage('base', {
 	},
 	noteDesign: {
 		where: 'device',
-		default: 'sharkey' as 'sharkey' | 'misskey',
+		default: 'misskey' as 'sharkey' | 'misskey',
 	},
 	enableInfiniteScroll: {
 		where: 'device',

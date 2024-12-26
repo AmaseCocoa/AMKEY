@@ -133,7 +133,9 @@
 	}
 
 	const cornerRadius = localStorage.getItem('cornerRadius');
-	if (cornerRadius) {
+	if (cornerRadius == "misskey") {
+		document.documentElement.classList.add(`radius-misskey`);
+	} else if (cornerRadius == "sharkey") {} else if (cornerRadius) {
 		document.documentElement.classList.add(`radius-${cornerRadius}`);
 	}
 
